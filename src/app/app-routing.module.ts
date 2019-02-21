@@ -5,6 +5,7 @@ import {AdminMainComponent} from './admin-main/admin-main.component';
 import {QuestionListComponent} from './question-list/question-list.component';
 import {UserListComponent} from './user-list/user-list.component';
 import {DashboardComponent} from './dashboard/dashboard.component';
+import {DisputeComponent} from './dispute/dispute.component';
 
 const routes: Routes = [
   { path: '', component: LoginComponent },
@@ -14,6 +15,7 @@ const routes: Routes = [
        { path: '', component: DashboardComponent },
        { path: 'question-list', component: QuestionListComponent },
        { path: 'user-list', component: UserListComponent },
+       { path: 'dispute', component: DisputeComponent },
      ]
   }
 ];
