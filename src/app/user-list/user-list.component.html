@@ -1,57 +1,15 @@
 <div class="mat-card card-color">
   <h4>Users</h4>
-  <div class="mat-card border-info   mb-3">
+  <div *ngFor="let u of users" class="mat-card border-info   mb-3">
     <div class="row">
       <div class="col-sm-2">
-        <h6 class="card-text"><a href="#">MahadAmir </a></h6>
+        <h6 class="card-text"><a href="#">{{u.username}}</a></h6>
       </div>
       <div class="col-sm-2">
-        <h6 class="card-text">mahadaamir@gmail.com</h6>
+        <h6 class="card-text">{{u.email}}</h6>
       </div>
       <div class="col-sm-8">
-        <button type="button" class="float-right btn btn-primary" (click)="delete_user()">Delete User</button>
-      </div>
-    </div>
-  </div>
-  <hr>
-  <div class="mat-card border-info   mb-3">
-    <div class="row">
-      <div class="col-sm-2">
-        <h6 class="card-text"><a href="#">MahadAmir </a></h6>
-      </div>
-      <div class="col-sm-2">
-        <h6 class="card-text">mahadaamir@gmail.com</h6>
-      </div>
-      <div class="col-sm-8">
-        <button type="button" class="float-right btn btn-primary" (click)="delete_user()">Delete User</button>
-      </div>
-    </div>
-  </div>
-  <hr>
-  <div class="mat-card border-info   mb-3">
-    <div class="row">
-      <div class="col-sm-2">
-        <h6 class="card-text"><a href="#">MahadAmir </a></h6>
-      </div>
-      <div class="col-sm-2">
-        <h6 class="card-text">mahadaamir@gmail.com</h6>
-      </div>
-      <div class="col-sm-8">
-        <button type="button" class="float-right btn btn-primary" (click)="delete_user()">Delete User</button>
-      </div>
-    </div>
-  </div>
-  <hr>
-  <div class="mat-card border-info   mb-3">
-    <div class="row">
-      <div class="col-sm-2">
-        <h6 class="card-text"><a href="#">MahadAmir </a></h6>
-      </div>
-      <div class="col-sm-2">
-        <h6 class="card-text">mahadaamir@gmail.com</h6>
-      </div>
-      <div class="col-sm-8">
-        <button type="button" class="float-right btn btn-primary" (click)="delete_user()">Delete User</button>
+        <button type="button" class="float-right btn btn-primary" (click)="delete_user(u._id)">Delete User</button>
       </div>
     </div>
   </div>
