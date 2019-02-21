@@ -4,13 +4,15 @@ import {LoginComponent} from './login/login.component';
 import {AdminMainComponent} from './admin-main/admin-main.component';
 import {QuestionListComponent} from './question-list/question-list.component';
 import {UserListComponent} from './user-list/user-list.component';
+import {DashboardComponent} from './dashboard/dashboard.component';
 
 const routes: Routes = [
   { path: '', component: LoginComponent },
   {
     path: 'main', component: AdminMainComponent,
      children: [
-       { path: '', component: QuestionListComponent },
+       { path: '', component: DashboardComponent },
+       { path: 'question-list', component: QuestionListComponent },
        { path: 'user-list', component: UserListComponent },
      ]
   }
