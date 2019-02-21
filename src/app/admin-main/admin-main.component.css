@@ -10,7 +10,9 @@
   margin-bottom: 5px;
 }
 .mat-card{
-  padding: 10px;
+  padding-left: 10px;
+  padding-right: 10px;
+  padding-top: 10px;
 }
 .card-color{
   background-color: #F8F9FA	;

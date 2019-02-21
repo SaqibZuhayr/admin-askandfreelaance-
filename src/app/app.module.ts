@@ -13,6 +13,7 @@ import {BrowserAnimationsModule} from '@angular/platform-browser/animations';
 import { MaterialModule } from './material.module';
 import { UserListComponent } from './user-list/user-list.component';
 import { QuestionListComponent } from './question-list/question-list.component';
+import { DashboardComponent } from './dashboard/dashboard.component';
 
 
 @NgModule({
@@ -23,7 +24,8 @@ import { QuestionListComponent } from './question-list/question-list.component';
     AdminSidebarComponent,
     NavbarComponent,
     UserListComponent,
-    QuestionListComponent
+    QuestionListComponent,
+    DashboardComponent
   ],
   imports: [
     BrowserModule,
