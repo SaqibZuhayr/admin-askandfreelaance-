@@ -14,6 +14,7 @@ import { MaterialModule } from './material.module';
 import { UserListComponent } from './user-list/user-list.component';
 import { QuestionListComponent } from './question-list/question-list.component';
 import { DashboardComponent } from './dashboard/dashboard.component';
+import { DisputeComponent } from './dispute/dispute.component';
 
 
 @NgModule({
@@ -25,7 +26,8 @@ import { DashboardComponent } from './dashboard/dashboard.component';
     NavbarComponent,
     UserListComponent,
     QuestionListComponent,
-    DashboardComponent
+    DashboardComponent,
+    DisputeComponent
   ],
   imports: [
     BrowserModule,
