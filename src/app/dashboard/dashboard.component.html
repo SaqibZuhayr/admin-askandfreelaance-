@@ -1,47 +1,40 @@
 <div class="row">
-  <div class="card-body col-sm-12">
-    <div class="row">
-      <div class="mat-card margin margin-user">
-        <div class="mat-card-title">
-          <h4>Users</h4>
-        </div>
-        <div class="mat-card-subtitle">
-          <div class="row" style="color: beige">
-            <h6>&nbsp;Total Users Registered:&nbsp;</h6>
-            <h6>105</h6>
-          </div>
-        </div>
-        <mat-card-actions>
-          <button mat-button class="btn-info"><a routerLink="/main/user-list" style="color: wheat">VIEW</a></button>
-        </mat-card-actions>
+  <div class="mat-card margin">
+    <div class="mat-card-title">
+      <h4>Users</h4>
+    </div>
+    <div class="mat-card-subtitle">
+      <div class="row">
+        <h6>&nbsp;Total Users:&nbsp;</h6>
+        <h6>{{data.countuser}}</h6>
       </div>
-      <div class="mat-card margin margin-question">
-        <div class="mat-card-title">
-          <h4>Questions</h4>
-        </div>
-        <div class="mat-card-subtitle">
-          <div class="row" style="color: beige">
-            <h6>&nbsp;Total Questions Posted:&nbsp;</h6>
-            <h6>475</h6>
-          </div>
-        </div>
-        <mat-card-actions>
-          <button mat-button class="btn-info"><a routerLink="/main/question-list" style="color: wheat">VIEW</a></button>
-        </mat-card-actions>
+    </div>
+    <mat-card-actions>
+      <button mat-button class="btn-info">VIEW</button>
+    </mat-card-actions>
+  </div>
+  <div class="mat-card margin">
+    <div class="mat-card-title">
+      <h4>Questions</h4>
+    </div>
+    <div class="mat-card-subtitle">
+      <div class="row">
+        <h6>&nbsp;Total Questions Posted:&nbsp;</h6>
+        <h6>{{data.countquestion}}</h6>
       </div>
-      <div class="mat-card margin margin-answer">
-        <div class="mat-card-title">
-          <h4>Answers</h4>
-        </div>
-        <div class="mat-card-subtitle">
-          <div class="row" style="color: beige">
-            <h6>&nbsp;Total Answers Posted:&nbsp;</h6>
-            <h6>475</h6>
-          </div>
-        </div>
-        <mat-card-actions>
-          <button mat-button class="btn-info"><a routerLink="#" style="color: wheat">VIEW</a></button>
-        </mat-card-actions>
+    </div>
+    <mat-card-actions>
+      <button mat-button class="btn-info">VIEW</button>
+    </mat-card-actions>
+  </div>
+  <div class="mat-card margin">
+    <div class="mat-card-title">
+      <h4>Answers</h4>
+    </div>
+    <div class="mat-card-subtitle">
+      <div class="row">
+        <h6>&nbsp;Total Answers Posted:&nbsp;</h6>
+        <h6>{{data.countanswer}}</h6>
       </div>
       <div class="mat-card margin margin-gig">
         <div class="mat-card-title">
